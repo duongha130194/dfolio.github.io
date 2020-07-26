@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<title>Dương's box</title>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+
+<style>
+body,h1,h2,h3 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+
+
+<!-- css blog bắt đầu nhó -->
+<style>
+
+.grid {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 60px;}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-item {
+  width: 33.333%;
+  float: left;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  min-height: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.grid-item .wrap-article {
+  border: 1px solid rgba(129, 129, 129, 0.1);
+  background: #ffffff;
+  padding: 30px 20px;
+}
+.grid-item .wrap-article img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.grid-item .wrap-article .img-circle {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+}
+.grid-item .wrap-article .fancy {
+  line-height: 0.5;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+  color: #818181;
+}
+.grid-item .wrap-article .fancy span {
+  display: inline-block;
+  position: relative;
+}
+.grid-item .wrap-article .fancy span:before,
+.grid-item .wrap-article .fancy span:after {
+  content: "";
+  margin-top: 1px;
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid #dedede;
+  top: 0;
+  width: 60%;
+}
+.grid-item .wrap-article .fancy span:before {
+  right: 100%;
+  margin-right: 5px;
+}
+.grid-item .wrap-article .fancy span:after {
+  left: 100%;
+  margin-left: 5px;
+}
+.grid-item .wrap-article .title {
+  font-size: 16px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  letter-spacing: 0.1;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.grid-item .wrap-article .title:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  bottom: -20px;
+  height: 1px;
+  background: #dedede;
+  width: 48px;
+  left: 0;
+  margin-top: 30px;
+}
+.grid-item .wrap-article .content-blog {
+  margin-top: 30px;
+  padding: 0 10px 0 10px;
+  text-align: justify;
+  color: #5f5f5f;
+}
+</style>
+<!-- css blog nghen -->
+
+<!-- số trang nhaa -->
+<style>
+
+.pagination{
+  margin-left: 500px;
+} 
+  /* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #febd01;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+<!-- hết số trang -->
+
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="w3-xlarge">GRAPHIC DESIGNER</h1>
+  <h1 style="font-family: Tangerine; color: #febd01">Duong</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a> <!-- đang ở phần nào thì thêm lệnh w3-light-grey phàn đó -->
+      <a href="design.html" class="w3-bar-item w3-button">Design</a>
+      <a href="photo.html" class="w3-bar-item w3-button">Photo</a>
+      
+      <a href="blog.html" class="w3-bar-item w3-button  w3-light-grey">Blog</a>
+      <a href="me.html" class="w3-bar-item w3-button w3-hide-small">My story</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- phần ảnh chính -->
+<section>
+<div class="w3-display-container" style="margin-bottom:50px">
+  <img src="./images/art.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-container w3-amber w3-hover-orange w3-hide-small"
+   style="bottom:10%;opacity:0.7;width:70%">
+  <h2><b>Blog<br>I want to remember everything in a special, unique way.</b></h2>
+</div>
+</div>
+</section>
+<!-- hết phần ảnh chính -->
+
+
+<!-- all abt content đây -->
+
+<!--BLOG-->
+        <section class="grey-bg" id="blog">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="title-small-center text-center">
+                  
+                </h3>
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    
+                    <h2 style="font-family: Tangerine; color: #febd01; text-align: center;" class="content-details text-center">
+                      "Writers must write every day." It sounds so romantic and noble.   
+                    </h2>
+                    
+                  </div>
+                </div>
+                <!--GRID BLOG-->
+                <div class="grid">
+                  <div class="grid-item">
+                    <div class="wrap-article">
+                      <img alt="blog-1" class="img-circle text-center" src="./images/m5.jpg">
+                      <p class="subtitle fancy">
+                        <span>24/07/2020</span>
+                      </p>
+                      <a href="#">
+                        <h3 class="title">
+                          As you know... 
+                        </h3>
+                      </a>
+                      <p class="content-blog">
+                        In the midst of this June sunshine, what are you doing guys? After each step back into everyday life, we all know we have missed the beat for a long time. For example, at this time, I should have been going out, traveling, dating the pub, but all of them turned upside down and put it in a corner, because the crisis just passed. But that's the way life works, and it always will be. You know, you know, you know...
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="grid-item">
+                    <div class="wrap-article">
+                     <img alt="blog-4" class="img-circle text-center" src="./images/2.jpg">
+                     <p class="subtitle fancy">
+                        <span>22/07/2020</span>
+                      </p>
+                      <a href="#">
+                        <h3 class="title">
+                          How are you today?
+                        </h3>
+                      </a>
+                      <p class="content-blog">
+                        The thing is, I went to school yesterday morning, everything was bustling and crowded as usual if an activity were to take place. Everyone dressed up beautifully, going together in pairs, pairs. I alone, no one, so I could not see anyone close enough to stand near me and start a conversation. Get out of that noisy place, or do a round of the stadium, or go sit on our lawn, I still do it with you.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="grid-item">
+                    <div class="wrap-article">
+                      <img alt="blog6" class="img-circle text-center" src="./images/phòng học cũ.jpg">
+                      <p class="subtitle fancy">
+                        <span>21/07/2020</span>
+                      </p>
+                      <a href="#">
+                        <h3 class="title">
+                          Orange-orange 
+                        </h3>
+                      </a>
+                      <p class="content-blog">
+                       After many orange-orange afternoons shattered against the blue sky, I realized that there was no boundary between everything in this world, right and wrong. Because on a long journey, when the happy ending is actually just the end of a movie, we can not say if it is really happy forever, or after the temporary happiness is a sad ending. Only thing, is I make it right or wrong.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="grid-item">
+                    <div class="wrap-article">
+                      <img alt="blog2" class="img-circle text-center" src="./images/b1.jpg">
+                      <p class="subtitle fancy">
+                        <span>15/06/2020</span>
+                      </p>
+                      <a href="#">
+                        <h3 class="title">
+                          Exam season, farewell season!
+                        </h3>
+                      </a>
+                      <p class="content-blog">
+                        Perhaps a weak season will hit the lane again. The time when everyone was busy was overwhelmed by the minds of all the exams and surveys, and all the arguments that were ahead of us regarding photos, costumes or locations. So many things are expected, so many things to think about, along with them, so many things to headache. Prepare for an event, for a holiday, for a long trip, that kind of thing. We are the same.
+                    </div>
+                  </div>
+
+                  <div class="grid-item">
+                    <div class="wrap-article">
+                      <img alt="blog5" class="img-circle text-center" src="./images/b6.jpg">
+                      <p class="subtitle fancy">
+                        <span>12/06/2020</span>
+                      </p>
+                      <a href="#">
+                        <h3 class="title">
+                          A first autumn day.
+                        </h3>
+                      </a>
+                      <p class="content-blog">
+                        The first few days of autumn were picturesque in the sunset. The sky will be clear and mix red-green to pink and then dark purple. A picture that maybe if it was on sale, then how much would surely have someone wanted. At those times, I like to wander the streets familiar with the stale smells of familiar shops. Today gratitude, when the last golden ball finally flies after being caught in a phoenix branch. You remember?
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="grid-item">
+                    <div class="wrap-article">
+                      <img alt="blog-3" class="img-circle text-center" src="./images/b5.jpg">
+                      <p class="subtitle fancy">
+                        <span>08/03/2015</span>
+                      </p>
+                      <a href="#">
+                        <h3 class="title">
+                          Somewhere place
+                        </h3>
+                      </a>
+                      <p class="content-blog">
+                        Then I miss CHV, there's no way I can't. The story of those who go away from home is like I miss CHV. Today, SU, I can't return to happiness, in fact, if I return, is there anyone waiting for me? I used to think that Corner needed me, as if to write a CHV that people want, to cool the soul that was so badly missed and loved. Alas, that was so happy, and so sad. Yet now, I also look to that cup of water, to spread out thoughts...
+                      </p>
+                    </div>
+                  </div>                  
+
+                </div>
+                <!--/.GRID BLOG END-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/.BLOG END-->
+<!-- hết for content nhé -->
+
+<!-- số trang -->
+<section>
+  
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a class="active" href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</section>
+<!-- hết số trang -->
+
+
+<br>
+<br>
+<section>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+  <a href="https://www.facebook.com/duong.buithithuy.73" class="fa fa-facebook w3-hover-opacity"></a>
+  <a href="https://www.behance.net/dngbi3" class="fa fa-behance w3-hover-opacity"></a>
+  <a href="https://www.instagram.com/ifntgwhwysj/" class="fa fa-instagram w3-hover-opacity"></a>
+  <a href="https://twitter.com" class="fa fa-twitter w3-hover-opacity"></a>
+  <a href="http://www.youtube.com" class="fa fa-youtube w3-hover-opacity"></a>
+  <a href="https://www.reddit.com" class="fa fa-reddit w3-hover-opacity"></a> 
+  
+  <p style="font-family: Raleway" class="w3-opacity">Created by Thùy Dương</a></p>
+</footer>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<title>Dương's box</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+
+
+<!-- số trang nhaa -->
+<style>
+
+.pagination{
+  margin-left: 500px;
+} 
+  /* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #febd01;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+<!-- hết số trang -->
+
+<!--- css quotes nhó -->
+<style>
+  /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+<!-- hết css quotes -->
+
+
+
+<!-- script quotes nghen -->
+
+ <script>
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+ </script>
+<!-- end script quotes hen -->
+
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="w3-xlarge">GRAPHIC DESIGNER</h1>
+  <h1 style="font-family: Tangerine; color: #febd01">Duong</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a> <!-- đang ở phần nào thì thêm lệnh w3-light-grey phàn đó -->
+      <a href="design.html" class="w3-bar-item w3-button">Design</a>
+      <a href="photo.html" class="w3-bar-item w3-button w3-light-grey">Photo</a>
+      
+      <a href="blog.html" class="w3-bar-item w3-button w3-hide-small">Blog</a>
+      <a href="me.html" class="w3-bar-item w3-button w3-hide-small">My story</a>
+    </div>
+  </div>
+</header>
+
+  
+<!-- phần ảnh chính -->
+<section>
+<div class="w3-display-container" style="margin-bottom:50px">
+  <img src="./images/photo.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-container w3-amber w3-hover-orange w3-hide-small"
+   style="bottom:10%;opacity:0.7;width:70%">
+  <h2><b>Photography<br>I want to tell stories through photos, just the photographs.</b></h2>
+</div>
+</div>
+
+
+
+<h2 style="font-family: Tangerine; color: #febd01; text-align: center;" class="content-details text-center">
+                      “Photography is a way of feeling, of touching, of loving." It remembers little things...   
+                    </h2>
+
+<div class="w3-row w3-container" style="margin:50px 0">
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-amber">
+    <img src="./images/p3.jpg" style="width:100%">
+    <h1 style="font-family: Raleway" class="w3-opacity">My dear!</h1>
+    <p style="font-family: Raleway; color: #febd01"><i>A photoshoot for Mai. </i></p>
+    <p class="text-justify" style="font-family: Raleway">I think everyone has a love story. Among them, there are things people never say, about someone they will not want to tell much, for fear of saying they will be lost to others, so there are things, it becomes top secret. As a secret story I like him. And he doesn't like anyone. He studied well, played good football. The reason why I like him, because I meet him on the way to school every day.</p>
+    
+  </div>
+</div>
+
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-amber">
+    <img src="./images/p2.jpg" style="width:100%">
+    <h1 style="font-family: Raleway" class="w3-opacity">A boy don't like football</h1>
+    <p style="font-family: Raleway; color: #febd01"><i>A photoshoot for Khôi and Mỹ Anh. </i></p>
+    <p style="font-family: Raleway">Life is messy, but we have never been a mess. So, boy, don't be sad. You are too young to be sad about this life, as well as sad about yourself. Oh oh oh we often blame ourselves for everything, sometimes thinking it is terrible and being a shame. But at the end of the day, even if you hid in a corner of the house no one could find, you were the only one who was still with me.</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-row w3-container" style="margin:50px 0">
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-orange">
+    <img src="./images/p5.jpg" style="width:100%">
+    <h1 style="font-family: Raleway" class="w3-opacity">I will miss you...</h1>
+    <p style="font-family: Raleway; color: #febd01"><i>A photoshoot for my CHV.</i></p>
+    <p style="font-family: Raleway">And we will return, right, when the time comes. Just going away to realize that a 10-thousand-cup mixed cup of tea is even better than some good-tasting paints, high-class friends looking for it all the time no one else replaces it. And 'home is a feeling', to see that sometimes the material flashy things out there do not stop the steps you want to go home.</p>
+  </div>
+</div>
+
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-orange">
+    <img src="./images/p6.jpg" style="width:100%">
+    <h1 style="font-family: Raleway" class="w3-opacity">No one else</h1>
+    <p style="font-family: Raleway; color: #febd01"><i>A photoshoot for Frida.</i></p>
+    <p style="font-family: Raleway">Today on the way home, I had the opportunity to look up at the sky. The clouds were clear and the sky was blue. The day is also cooler than usual. There was a trail of aircraft that had just passed, still straight across a line across that deep green. Besides, I have to stretch my eyes to see a small black dot. A black dot pored in the long, wide sky.</p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- hết phần ảnh chính -->
+
+
+<!-- số trang -->
+<section>
+  
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a class="active" href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</section>
+<!-- hết số trang -->
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- quotes slideshow bắt đầu è é -->
+
+<!-- Slideshow container -->
+<section>
+  <div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q>When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.</q>
+    <p style="color: #febd01" class="author">— Ansel Adams</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Beauty can be seen in all things, seeing and composing the beauty is what separates the snapshot from the photograph.</q>
+    <p style="color: #febd01" class="author">— Matt Hardy</p>
+  </div>
+
+  <div class="mySlides">
+    <q>What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.</q>
+    <p style="color: #febd01" class="author">— Karl Lagerfeld</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</section>
+<!-- end quotes -->
+
+
+
+<br>
+<br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+  <a href="https://www.facebook.com/duong.buithithuy.73" class="fa fa-facebook w3-hover-opacity"></a>
+  <a href="https://www.behance.net/dngbi3" class="fa fa-behance w3-hover-opacity"></a>
+  <a href="https://www.instagram.com/ifntgwhwysj/" class="fa fa-instagram w3-hover-opacity"></a>
+  <a href="https://twitter.com" class="fa fa-twitter w3-hover-opacity"></a>
+  <a href="http://www.youtube.com" class="fa fa-youtube w3-hover-opacity"></a>
+  <a href="https://www.reddit.com" class="fa fa-reddit w3-hover-opacity"></a> 
+  
+  <p style="font-family: Raleway" class="w3-opacity">Created by Thùy Dương</a></p>
+</footer>
+
+</body>
+</html>

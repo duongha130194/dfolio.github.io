@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html>
+<title>Dương's box</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> <!-- link font chữ Dương trang chủ -->
+
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+<style>
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+
+body {font-family: "Raleway", Arial, sans-serif}
+
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+
+
+<style>
+
+body{
+  margin: 0;
+}  
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title{
+  flex: : 0 0 100%;
+  max-width: 100%;
+  <!-- margin-left: 300px; căn lề cho cái chữ Hi, I'm Dương -->
+  margin-bottom: 40px;
+  width: 100%; 
+}
+
+.section-title h1{
+  display: inline-block;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 22px;
+ 
+  text-transform: uppercase;
+  font-weight: 700px;
+  color: #000000;
+  margin:0 0 10px;
+  position: relative;
+}
+
+.section-title h1:before{
+  content: '';
+  left: 0;
+  position: absolute;
+  height: 2px;
+  right: 30%;
+  background-color: #febd01;
+  bottom: 0px;
+}
+
+.text-center{
+  text-align: center!important;
+}
+
+.text-left{
+  text-align: left!important;
+}
+
+.text-right{
+  text-align: right!important;
+}
+
+
+</style>
+
+
+<style>
+/*About Me*/
+
+.about-me{
+ padding:30px 20px;
+ background-color: #ffffff;
+}
+
+.text-uppercase{
+  text-transform: uppercase!important;
+}
+.about-me .section-title p.small{
+  display: block;
+  font-size: 14px;
+  color:#838383;
+  font-weight: 400;
+  letter-spacing:2px;
+}
+
+.about-me .about-content .img{
+  flex:0 0 33.33%;
+  max-width: 33.33%;
+}
+.about-me .about-content .img img{
+  display: block;
+}
+
+.about-me .about-content .text{
+  flex:0 0 66.66%;
+  max-width: 66.66%;
+  padding-left:30px;
+}
+
+.about-me .about-content .text h4{
+  font-size: 25px;
+  font-weight: 600;
+  margin:0 0 5px;
+  color:#000000;
+}
+.about-me .about-content .text h6{
+  font-size: 18px;
+  font-weight: 500;
+  margin:0 0 15px;
+  color:#000000;
+}
+.about-me .about-content .text h6 span{
+  color:#febd01;
+}
+
+.about-me .about-content .text p{
+ font-size: 15px;
+ font-weight: 400;
+ line-height:24px;
+ color:#838383;
+ margin:0 0 20px;
+}
+
+.about-me .about-content .text .info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.about-me .about-content .text .info .list{
+  flex:0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top:10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom:1px solid #dee2e6;
+  padding-bottom:10px;
+}
+.about-me .about-content .text .info .list label{
+  padding-right:10px;
+  color:#000000;
+  font-weight: 600;
+  font-size:15px;
+}
+.about-me .about-content .text .info .list p{
+  margin:0;
+}
+
+.about-me .about-content .text .social-links{
+  padding-top:30px;
+}
+.about-me .about-content .text .social-links a{
+  height:30px;
+  width:30px;
+  background-color: #000000;
+  border-radius:3px;
+  display: inline-block;
+  border:1px solid #000000;
+  line-height: 28px;
+  text-align: center;
+  margin:0 1px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.about-me .about-content .text .social-links a:hover{
+  background-color: transparent;
+}
+.about-me .about-content .text .social-links a .fa{
+ color: #ffffff;
+ font-size:12px;
+ -webkit-transition: all .5s ease;
+ transition: all .5s ease;
+}
+.about-me .about-content .text .social-links a:hover .fa{
+  color:#000000;
+}
+</style>
+<!-- hết about me nha -->
+<!-- button CV -->
+
+
+
+<!-- hết button CV -->
+
+<!-- cho cái đống skill lĩnh vực đây -->
+<style>
+.skill{
+  background-color: #ffffff;
+  padding:100px 0px 70px;
+  margin-left: 100px;
+  margin-right: 40px;
+} 
+
+.skill .section-title h1:before{
+  left: 30%;
+} 
+
+.skill .skill-content{
+  flex:0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill .skill-content .box{
+  background-color: #ffffff;
+  padding: 30px;
+  flex:0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  border-left: 20px solid white;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  position: relative;
+  border-radius: 3px;
+}
+
+.skill .skill-content .box::before{
+  content: '';
+  height: 2px;
+  background-color: #febd01;
+  position: absolute;
+  bottom: 0px;
+  width: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all .5s ease;
+}
+
+.skill .skill-content .box:hover::before{
+  width: 100%;
+}
+
+.skill .skill-content .box .icon{
+  height: 60px;
+  width: 60px;
+  background-color: #febd01;
+  margin: 15px auto 20px;
+  border-radius: 50px; 
+  text-align: center;
+}
+
+.skill .skill-content .box .icon .fa{
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 60px;
+}
+
+.skill .skill-content .box h5{
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+.skill .skill-content .box p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 10px 0 10px;
+}
+
+</style>
+<!-- hết lĩnh vực nhéeee -->
+
+<!-- style portfolio -->
+<style>
+.portfolio{
+ background-color: #f5f8fd;
+ padding: 100px 7px;
+}
+.portfolio .section-title h1:before{
+  left:30%;
+}
+
+.portfolio .filter-buttons{
+  
+  flex:0 0 100%;
+  max-width: 100%;
+}
+.portfolio .filter-buttons ul{
+  list-style: none;
+  text-align: center;
+  padding:0;
+}
+.portfolio .filter-buttons ul li{
+  color:#000000;
+  font-weight: 500;
+  font-size:16px;
+  display: inline-block;
+  margin:0px 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom:0px;
+}
+
+.portfolio .filter-buttons ul li.active{
+  color:#febd01;
+  border-bottom:2px solid #febd01;
+}
+
+.portfolio a:hover{
+  color:#febd01;
+  border-bottom:2px solid #febd01;
+}
+.portfolio .filter-buttons{
+  margin-bottom:25px;
+}
+
+.portfolio .portfolio-gallery{
+  flex:0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.portfolio .portfolio-gallery .item{
+  
+  flex:0 0 33.33%;
+  max-width:33.33%;
+  position: relative;
+  padding:8px;
+}
+.portfolio .portfolio-gallery .item .inner{
+  position: relative;
+}
+.portfolio .portfolio-gallery .item img{
+  width: 100%;
+  display: block;
+}
+
+.portfolio .portfolio-gallery .item .overlay{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  background-color: rgba(0,0,0,0.6);
+  z-index:10;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity:0;
+  transition: all .5s ease;
+}
+.portfolio .portfolio-gallery .item:hover .overlay{
+   opacity: 1;
+}
+.portfolio .portfolio-gallery .item .overlay .fa{
+  height:50px;
+  width:50px;
+  background-color: #febd01;
+  color:#ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  border-radius:50%;
+  cursor: pointer;
+  
+}
+.portfolio .portfolio-gallery .item:hover .overlay .fa{
+  -webkit-animation: galleryIcon .8s ease;
+  animation: galleryIcon .8s ease;
+}
+@keyframes galleryIcon{
+    0%{
+      transform: translateY(-20px);opacity:0;
+    }
+    100%{
+    transform: translateY(0);opacity:1; 
+    }
+}
+.portfolio .portfolio-gallery .item .overlay h4{
+  margin-top:15px;
+  font-size: 25px;
+  color:#ffffff;
+  font-weight: 600;
+}
+.portfolio .portfolio-gallery .item:hover .overlay h4{
+  -webkit-animation: galleryText .8s ease;
+  animation: galleryText .8s ease;
+}
+@keyframes galleryText{
+    0%{
+      transform: translateY(20px);opacity:0;
+    }
+    100%{
+    transform: translateY(0);opacity:1; 
+    }
+}
+
+</style>
+<!-- style port ends nhó -->
+
+
+
+<style>
+  /*lightbox*/
+.lightbox{
+  position: fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  z-index:100;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+
+}
+.lightbox.show{
+  display: flex;
+}
+
+.lightbox.hide{
+  display: none;
+}
+.lightbox .close-lightbox{
+  height:35px;
+  width:35px;
+  background-color: #ffffff;
+  color:#febd01;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  right:10px;
+  top:10px;
+  cursor: pointer;
+  border-radius:50%;
+  z-index: 101;
+
+}
+
+.lightbox img{
+  max-width:90%;
+  max-height:80%;
+  display: block;
+}
+
+
+
+/* message text*/
+.message-text{
+  background-color: #0c0c17;
+  padding:40px 15px;
+}
+.message-text .text{
+  flex:0 0 66.66%;
+  max-width: 66.66%;
+}
+.message-text .text h2{
+  font-size:25px;
+  color:#ffffff;
+  font-weight: 700;
+  margin:0;
+  padding:0;
+  line-height:35px;
+}
+.message-text .button{
+  flex:0 0 33.33%;
+  max-width: 33.33%;
+  text-align: right;
+}
+.message-text .button a{
+    border-radius:4px;
+  color:#ffffff;
+  border:1px solid #ffffff;
+  padding:12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .5s ease;
+  background-color: transparent;
+}
+.message-text .button a:hover{
+  background-color: #ffffff;
+  color:#000000;
+}
+
+
+
+/*Testimonials*/
+
+.testimonials{
+  padding:100px 0px;
+  background-color: #f5f8fd;
+}
+.testimonials .section-title h1:before{
+  left:30%;
+}
+.testimonials .testimonials-content{
+position: relative;
+overflow:hidden;
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.testimonials .testimonials-content .testi-slider .slide{
+  background-color: #ffffff;
+  margin-bottom:15px;
+  border:1px solid #eeeeee;
+  padding:40px 20px;
+  border-radius:4px;
+  display: flex;
+  flex-wrap: nowrap;
+  float: left;
+  width: 100%;
+}
+.testimonials .testimonials-content .testi-slider .slide .img{
+  flex:0 0 128px;
+  max-width:128px;
+}
+.testimonials .testimonials-content .testi-slider .slide p{
+ font-size: 15px;
+ font-weight: 400;
+ line-height:24px;
+ color:#838383;
+ margin:0;
+}
+.testimonials .testimonials-content .testi-slider{
+  float:left;
+  transition: margin 1s ease;
+}
+.testimonials .testimonials-content .testi-slider .slide h6{
+  font-size:16px;
+  font-weight: 600;
+  color:#000000;
+  margin:10px 0 5px;
+}
+
+.testimonials .testimonials-content .slide-controls{
+  float:left;
+  width: 100%;
+  text-align: center;
+}
+.testimonials .testimonials-content .slide-controls div{
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border-radius:50%;
+  border:1px solid #febd01;
+  display: inline-block;
+  margin:10px 6px;
+  cursor: pointer;
+}
+
+.testimonials .testimonials-content .slide-controls div.active{
+  background-color: #febd01;
+}
+
+
+
+/*Blogs*/
+.blogs{
+  padding:100px 15px;
+  background-color: #ffffff;
+}
+
+.blogs .section-title h1:before{
+  left:30%;
+}
+
+.blogs .blogs-content{
+  
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blogs .blogs-content .box{
+  flex:0 0 calc(33.33% - 25px);
+  max-width: calc(33.33% - 25px);
+}
+
+.blogs .blogs-content .box .img{
+  overflow: hidden;
+}
+.blogs .blogs-content .box .img img{
+ width: 100%;
+ display: block;
+ transition: all .5s ease;
+}
+.blogs .blogs-content .box:hover .img img{
+   transform: scale(1.1);
+}
+.blogs .blogs-content .box .info {
+  padding:10px 0;
+}
+.blogs .blogs-content .box .info span{
+  font-size: 12px;
+  color:#838383;
+  display: inline-block;
+}
+.blogs .blogs-content .box .info span:nth-child(2){
+   border-left:1px solid #dddddd;
+   padding-left:8px;
+   margin-left:10px;
+}
+.blogs .blogs-content .box h3{
+  font-size:22px;
+  font-weight:600;
+  color:#000000;
+  margin:0 0 10px;
+  padding:0;
+
+}
+.blogs .blogs-content .box p{
+ font-size: 15px;
+ font-weight: 400;
+ line-height:24px;
+ color:#838383;
+ margin:0 0 10px;
+}
+.blogs .blogs-content .box a{
+  font-size: 14px;
+  color:#febd01;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #febd01;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.blogs .blogs-content .box a:hover{
+  color:#000000;
+  border-color: #000000;
+}
+
+
+
+/*Contact Us*/
+
+.contact-us{
+  padding:100px 15px;
+  background-color: #f5f8fd;
+}
+.contact-us .section-title h1:before{
+  left:30%;
+}
+
+.contact-us .contact-form{
+  background-color: #ffffff;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding:50px;
+  border:1px solid #eeeeee;
+}
+
+.contact-us .contact-form .text{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.contact-us .contact-form .text h2{
+  font-size:26px;
+  font-weight: 600;
+  color:#000000;
+  margin:0;
+  padding:0;
+}
+.contact-us .contact-form .text p{
+ font-size: 15px;
+ font-weight: 400;
+ line-height:24px;
+ color:#838383;
+ margin:0px;
+}
+.contact-us .contact-form .space-between{
+  justify-content: space-between;
+}
+.contact-us .contact-form .col-6{
+ 
+ flex: 0 0 calc(50% - 15px);
+ max-width: calc(50% - 15px);
+}
+.contact-us .contact-form .col-12{
+  flex: 0 0 100%;
+   max-width: 100%;
+}
+
+.contact-us .contact-form .form-control{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border:1px solid #ced4da;
+  padding:6px 12px;
+  font-size: 14px;
+  font-weight:400;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-us .contact-form textarea.form-control{
+  height: 140px;
+}
+
+.contact-us .contact-form .form-control::placeholder{
+  color:#838383;
+}
+.contact-us .contact-form .button{
+  flex:0 0 100%;
+  max-width: 100%;
+}
+.contact-us .contact-form .button a{
+    border-radius:4px;
+  color:#ffffff;
+  padding:12px 25px;
+  text-decoration: none;
+  
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .5s ease;
+  background-color:#febd01;
+  box-shadow:0px 10px 15px #e8e8e8;
+}
+.contact-us .contact-form .button a:hover{
+  background-color: #000000;
+  color:#ffffff;
+}
+
+</style>
+
+
+
+<script>
+  // gallery item filter
+  const filterButtons=document.querySelector("#filter-btns").children;
+  const items=document.querySelector(".portfolio-gallery").children;
+
+   for(let i=0; i<filterButtons.length; i++){
+     filterButtons[i].addEventListener("click",function(){
+      for(let j=0; j<filterButtons.length; j++){
+        filterButtons[j].classList.remove("active") 
+
+      }
+      this.classList.add("active");
+        const target=this.getAttribute("data-target")
+      
+      for(let k=0; k<items.length; k++){
+        items[k].style.display="none";
+            if(target==items[k].getAttribute("data-id"))
+            {
+              items[k].style.display="block";
+            }
+            if(target=="all"){
+                items[k].style.display="block"; 
+            }
+      }
+
+      
+
+     })
+   }
+   
+   // lightbox
+
+  const closeLightbox=document.querySelector(".close-lightbox");
+  const lightbox=document.querySelector(".lightbox");
+  const lightboxImage=lightbox.querySelector("img")
+     
+     lightbox.addEventListener("click",function(){
+      if(event.target!=lightboxImage){
+        lightbox.classList.remove("show");
+      lightbox.classList.add("hide");
+      }
+
+     })
+
+     closeLightbox.addEventListener("click",function(){
+      lightbox.classList.remove("show");
+      lightbox.classList.add("hide");
+     })
+
+ const gallery=document.querySelector(".portfolio-gallery");
+ const galleryItem=gallery.querySelectorAll(".item");
+ 
+ galleryItem.forEach(function(element){
+  element.querySelector(".fa-plus").addEventListener("click",function(){
+     lightbox.classList.remove("hide");
+     lightbox.classList.add("show");
+     lightboxImage.src=element.querySelector("img").getAttribute("src")
+  })
+ })
+
+
+  // testimonial slider 
+  const sliderContainer=document.querySelector(".testi-slider");
+  const slides=sliderContainer.children;
+  const containerWidth=sliderContainer.offsetWidth;
+  const margin=30;
+  let itemPerSlide=0;
+  let slideDots;
+  
+  // responsive
+  const responsive=[
+        {breakPoint:{width:0,item:1}},
+        {breakPoint:{width:991,item:2}} 
+     ]        
+
+ function load(){
+    for(let i=0; i<responsive.length; i++){
+      if(window.innerWidth>responsive[i].breakPoint.width){
+         itemPerSlide=responsive[i].breakPoint.item;      
+      }
+
+    }
+
+    start();
+ }
+
+ function start(){
+       totalWidth=0;
+       for(let i=0; i<slides.length; i++){
+        slides[i].style.width=(containerWidth/itemPerSlide)-margin + "px";
+        slides[i].style.margin=margin/2 + "px";
+            totalWidth+=containerWidth/itemPerSlide;
+       }
+
+       sliderContainer.style.width=totalWidth + "px";
+
+       slideDots=Math.ceil(slides.length/itemPerSlide);
+      //console.log(slideDots)
+
+      for(let i=0; i<slideDots; i++){
+          const div=document.createElement("div");
+                div.id=i;
+                div.setAttribute("onclick","controlSlide(this)");
+                if(i==0){
+                  div.classList.add("active");
+                }
+        document.querySelector(".slide-controls").appendChild(div);
+      }
+ }
+ 
+  let currentSlide=0;
+  let    autoSlide=0;
+         
+ function controlSlide(element){
+      clearInterval(timer)
+      timer=setInterval(autoPlay,5000);
+         autoSlide=element.id;
+        currentSlide=element.id;
+       changeSlide(currentSlide)
+ }
+
+ function changeSlide(currentSlide){
+   controlButtons=document.querySelector(".slide-controls").children;
+                   
+   for(let i=0; i<controlButtons.length; i++){
+      controlButtons[i].classList.remove("active")
+   }
+        // console.log(currentSlide)
+   controlButtons[currentSlide].classList.add("active")
+
+   sliderContainer.style.marginLeft=-(containerWidth*currentSlide) + "px";
+ }
+
+  function autoPlay(){
+        
+      if(autoSlide==slideDots-1){
+        autoSlide=0;
+      }
+      else{
+        autoSlide++;
+      }
+      changeSlide(autoSlide)
+  }
+
+
+
+  let timer=setInterval(autoPlay,5000);
+
+ window.onload=load();
+
+ // header fixed
+
+  window.onscroll=function(){
+     const docScrollTop=document.documentElement.scrollTop;
+
+     if(window.innerWidth>991){
+      if(docScrollTop>100){
+        document.querySelector("header").classList.add("fixed")
+      }
+      else{
+      document.querySelector("header").classList.remove("fixed")  
+      }
+     }
+  }    
+ 
+
+ // navbar links
+
+ const navbar = document.querySelector(".navbar");
+       a=navbar.querySelectorAll("a");
+       
+       a.forEach(function(element){
+         element.addEventListener("click",function(){
+             for(let i=0; i<a.length; i++){
+              a[i].classList.remove("active");
+             }
+          this.classList.add("active")
+          document.querySelector(".navbar").classList.toggle("show");
+         })
+       })
+
+  // ham-burger
+
+  const hamBurger=document.querySelector(".ham-burger");
+
+  hamBurger.addEventListener("click",function(){
+        document.querySelector(".navbar").classList.toggle("show");
+  })
+
+
+</script>
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="w3-xlarge">GRAPHIC DESIGNER</h1>
+  <h1 style="font-family: Tangerine; color: #febd01">Duong</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="index.html" class="w3-bar-item w3-button w3-light-grey">Home</a> <!-- đang ở phần nào thì thêm lệnh w3-light-grey phàn đó -->
+      <a href="design.html" class="w3-bar-item w3-button">Design</a>
+      <a href="photo.html" class="w3-bar-item w3-button">Photo</a>
+      
+      <a href="blog.html" class="w3-bar-item w3-button w3-hide-small">Blog</a>
+      <a href="me.html" class="w3-bar-item w3-button w3-hide-small">My story</a>
+    </div>
+  </div>
+</header>
+
+
+ <!-- Start About -->
+ <section class="about-me" id="about">
+    <div class="container">
+       <div class="row">
+          <div class="section-title">
+              <h1 class="w3-opacity">About Me</h1>
+              <p class="small">Who Am I? Hmm...</p>
+          </div>
+       </div>
+       <div class="row">
+          <div class="about-content">
+            <div class="row">
+              <div class="img">
+                  <img src="./images/4.jpg" alt="about-me" class="img-fluid" width="350" height="458">
+              </div>
+              <div class="text">
+                  <h4>I'm Dương!</h4>
+                  <h6>I'm a <span>graphic</span> designer and here is <span>my CV</span>: <a href="" target="_blank">Gooo!</a></h6>
+                  <p class="text-justify">I enjoy making sketches of idea that I hope one day all of them will be available. Graphic design, illus,... to me, is a way to express the unique side of your creativity. This is also a career that I believe I can achieve if I stay focused and continue to put effort in my creations. Oh and my background is more artistic and I've been doing artworks since my childhood. </p>
+                  
+
+
+                  <div class="info">
+                    <div class="list">
+                       <label>Birthday:</label>
+                       <p>14th January 1999</p>
+                    </div>
+                    <div class="list">
+                       <label>Email:</label>
+                       <p>buithithuyduong99@gmail.com</p>
+                    </div>
+                    <div class="list">
+                       <label>Residence:</label>
+                       <p>Viet Nam</p>
+                    </div>
+                    <div class="list">
+                       <label>Phone:</label>
+                       <p>(+84) 372353936</p>
+                    </div>
+                    <div class="list">
+                       <label>Languages:</label>
+                       <p>Vietnamese, French, English</p>
+                    </div>
+                    <div class="list">
+                       <label>Behance:</label>
+                       <p>https://www.behance.net/dngbi3</p>
+                    </div>
+                    <div class="list">
+                        <label>Hobby:</label>
+                        <p>To Like You</p>
+                    </div>
+                    <div class="list">
+                       <label>Freelance:</label>
+                       <p>Available</p>
+                    </div>
+                  </div>
+                  <!-- social links -->
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/duong.buithithuy.73"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.behance.net/dngbi3"><i class="fa fa-behance"></i></a>
+                    <a href="https://www.instagram.com/ifntgwhwysj/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="http://www.youtube.com"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.reddit.com"><i class="fa fa-reddit"></i></a>
+                  </div>
+                  <br>
+                  <br>
+                
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+
+ </section>
+ <!-- End About -->
+
+
+
+<!-- đống kỹ năng nhé -->
+<section class="skill">
+  <div class="container">
+      
+      <div class="section-title text-center">
+        <h1 class="w3-opacity">I WORK IN</h1>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="skill-content">
+        <div class="row">
+          
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-cube"></i>
+            </div>
+            <h5>3D Design</h5>
+            <p class="text-justify">3D product design is the creation of a product in a virtual environment such the product has three dimensions (height, width, depth). The result is a digital prototype of your product, one you can explore in detail. </p>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-paint-brush"></i>
+            </div>
+            <h5>Illustration</h5>
+            <p class="text-justify">An illustration is a decoration, interpretation or visual explanation of a text, concept or process, designed for integration in published media, such as posters, flyers, magazines, books, animations,... </p>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-sitemap"></i>
+            </div>
+            <h5>UX/UI Design</h5>
+            <p class="text-justify">If either one of of UI or UX is poor, the user senses an inferior product. Both UI and UX need to more than just great individually. It’s only when they blend together seamlessly does either of the two, become great.</p>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-address-book-o"></i>
+            </div>
+            <h5>Brading</h5>
+            <p class="text-justify">The marketing practice of creating a name, symbol or design that identifies and differentiates a product from other products. An effective brand strategy gives you a major edge in increasingly competitive markets.</p>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-camera-retro"></i>
+            </div>
+            <h5>Photography</h5>
+            <p class="text-justify">Photography is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor.</p>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <h5>Copywriter</h5>
+            <p class="text-justify">Copywriter is a writer of text for advertising purposes or other forms of marketing, participating in producing creative content such as slogan, image ideas,... to serve branding, media and product advertising.</p>
+          </div>
+
+
+        </div>
+      </div>
+    
+
+  </div>
+
+
+</section>
+<!-- hết kỹ năng -->
+
+<br>
+<br>
+
+<!-- Start Portfolio Work -->
+ <section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h1 class="w3-opacity">Latest Designs</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="filter-buttons">
+        <ul id="filter-btns">
+          <h5><li data-target="all"><a>All</a></li></h5>
+          <h5><li data-target="3d design"><a>3D Design</a></li></h5>
+          <h5><li data-target="illustration"><a>Illustration</a></li></h5>
+          <h5><li data-target="ux/ui design"><a>UX/UI Design</a></li></h5>
+          <h5><li data-target="branding"><a>Branding</a></li></h5>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="portfolio-gallery">
+        <div class="item" data-id="branding">
+          <div class="inner">
+          <img src="./images/a.jpg" alt="portfolio" />
+          <div class="overlay">
+            <span class="fa fa-plus"></span>
+            <h4>Branding</h4>
+          </div>
+           </div>
+        </div>
+        <div class="item" data-id="3d design">
+           <div class="inner">
+          <img src="./images/b.jpg" alt="portfolio" />
+          <div class="overlay">
+            <span class="fa fa-plus"></span>
+            <h4>3D Design</h4>
+          </div>
+          </div>
+        </div>
+        <div class="item" data-id="3d design">
+          <div class="inner">
+          <img src="./images/c.jpg" alt="portfolio" />
+          <div class="overlay">
+            <span class="fa fa-plus"></span>
+            <h4>3D Design</h4>
+          </div>
+          </div>
+        </div>
+        <div class="item" data-id="illustration">
+          <div class="inner">
+          <img src="./images/e.jpg" alt="portfolio" />
+          <div class="overlay">
+            <span class="fa fa-plus"></span>
+            <h4>Illustration</h4>
+          </div>
+          </div>
+        </div>
+        <div class="item" data-id="ux/ui design">
+          <div class="inner">
+          <img src="./images/d.jpg" alt="portfolio" />
+          <div class="overlay">
+            <span class="fa fa-plus"></span>
+            <h4>UX/UI Design</h4>
+          </div>
+          </div>
+        </div>
+        <div class="item" data-id="illustration">
+          <div class="inner">
+          <img src="./images/f.jpg" alt="portfolio" />
+          <div class="overlay">
+            <span class="fa fa-plus"></span>
+            <h4>Illustration</h4>
+          </div>
+          </div>
+                </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- End Portfolio Work -->
+
+ <!-- Start Lightbox -->
+  <div class="lightbox hide">
+       <span class="close-lightbox fa fa-close"></span>
+    <img src="./images/a.jpg" alt="portfolio" />
+  </div>
+ <!-- End Lightbox -->
+
+
+
+<!-- Start Testimonials -->
+ <section class="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <h1 class="w3-opacity">Experience</h1>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="testimonials-content">
+          <div class="testi-slider">
+            <div class="slide">
+              <div class="img">
+                <img src="./images/e1.jpg" alt="testi" class="img-fluid" width="110" height="110">
+              </div>
+              <div class="text">
+                <p>At school, I learned French, I was exposed to French culture and I especially loved painting, I painted and gradually developed my drawings into designs. By drawing and using some design software, I was able to participate in event organizing activities. Studying at highschool and participating in school activities makes me know what I want to do in the future.</p>
+                <h6>Studying at Hùng Vương High School for the Gifted, Phú Thọ.</h6>
+                <p>2014 - 2017</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="img">
+                <img src="./images/e22.jpg" alt="testi" class="img-fluid" width="110" height="110">
+              </div>
+              <div class="text">
+                <p>I am a third year student. At the University, I continue to join clubs, organizations related to the design and content creation: At FU Cinema Studio Club, I participated in the process of designing 2D publications, making movie posters and writing scripts for films; I am a contributor of Fanpage FU Education, I participated in writing and drawing to illustrate some topics of the organization.</p>
+                <h6>Studying major in graphic design at FPT University, Hà Nội.</h6>
+                <p>2017 - now</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="img">
+                <img src="./images/e3.jpg" alt="testi" class="img-fluid" width="110" height="110">
+              </div>
+              <div class="text">
+                <p>At the internship, I was trained and practiced at the junior graphic designer position. I have been involved in the program branding design, visual LED screen design, 3D character model design and virtual studio. I was able to visit the studio of the television programs, to see how a post-TV program was postponed.</p>
+                <h6>Internship at Vietnam Fine Arts Center, Vietnam Television (VTV), Hà Nội.</h6>
+                <p>2020 - now</p>
+              </div>
+            </div>
+            
+            </div>
+
+          </div>
+          <!-- slide controls -->
+          <div class="slide-controls">
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
+<!-- End Testimonials -->
+
+<!-- Start Blogs -->
+<section class="blogs" id="blog">
+   <div class="container">
+      <div class="row">
+          <div class="section-title text-center">
+             <h1 class="w3-opacity">Latest Blogs</h1>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="blogs-content">
+              <div class="box">
+                  <div class="img">
+                    <img src="./images/m5.jpg" alt="blog" />
+                  </div>
+                  <div class="info">
+                     <span>24 June 2020</span> <span>Summer time</span>
+                  </div>
+                  <h3>As you know...</h3>
+                  <p>In the midst of this June sunshine, what are you doing guys?...</p>
+                  <a href="blog.html">Read More</a>
+              </div>
+              <div class="box">
+                  <div class="img">
+                    <img src="./images/2.jpg" alt="blog" />
+                  </div>
+                  <div class="info">
+                     <span>22 June 2020</span> <span>Lifestyle</span>
+                  </div>
+                  <h3>How are you today?</h3>
+                  <p>The thing is, I went to school yesterday morning, everything...</p>
+                  <a href="blog.html">Read More</a>
+              </div>
+              <div class="box">
+                  <div class="img">
+                    <img src="./images/phòng học cũ.jpg" alt="blog" />
+                  </div>
+                  <div class="info">
+                     <span>21 June 2019</span> <span>My love</span>
+                  </div>
+                  <h3>Orange-orange</h3>
+                  <p>After many orange-orange afternoons shattered against the...</p>
+                  <a href="blog.html">Read More</a>
+              </div>
+          </div>
+      </div>
+   </div>
+</section>
+<!-- End Blogs -->
+
+<!-- Start Contact us -->
+ <section class="contact-us" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h1 class="w3-opacity">Get In Touch</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact-form">
+        <div class="row">
+          <div class="text">
+            <h2>Be A Better You</h2>
+            <p>I wish you a life that can make you proud. With me, let's gooo!</p>
+          </div>
+        </div>
+        <div class="row space-between">
+          <div class="col-6">
+            <i><input style="font-family: Raleway; color: #febd01" type="text" class="form-control" name="" placeholder="Name"></i>
+          </div>
+          <div class="col-6">
+            <i><input style="font-family: Raleway; color: #febd01" type="text" class="form-control" name="" placeholder="Email"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <i><textarea style="font-family: Raleway; color: #febd01" class="form-control" placeholder="Your Comment"></textarea></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button text-right">
+            <a href="">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+<!-- End Contact us -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+  <a href="https://www.facebook.com/duong.buithithuy.73" class="fa fa-facebook w3-hover-opacity"></a>
+  <a href="https://www.behance.net/dngbi3" class="fa fa-behance w3-hover-opacity"></a>
+  <a href="https://www.instagram.com/ifntgwhwysj/" class="fa fa-instagram w3-hover-opacity"></a>
+  <a href="https://twitter.com" class="fa fa-twitter w3-hover-opacity"></a>
+  <a href="http://www.youtube.com" class="fa fa-youtube w3-hover-opacity"></a>
+  <a href="https://www.reddit.com" class="fa fa-reddit w3-hover-opacity"></a> 
+  <br>
+  <br>
+  <p style="font-family: Raleway" class="w3-opacity">Created by Thùy Dương</a></p>
+</footer>
+
+</body>
+</html>
